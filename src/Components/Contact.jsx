@@ -1,6 +1,6 @@
 export default function Contact(){
     return(
-        <div className="contactDiv">
+        <div data-aos="fade-up" className="contactDiv">
             <ContactCard logoSrc="./src/Logos/linkedIn.png" contactTitle={"LinkedIn"} id={"Soumya Tiwari"} link={"https://www.linkedin.com/in/soumya-tiwari-766430323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} text={"Connect"}/>
 
             <ContactCard logoSrc="./src/Logos/github.png" contactTitle={"GitHub"} id={"soumyatiw"} link={"https://github.com/soumyatiw"} text={"Connect"}/>
@@ -38,7 +38,7 @@ function ContactCard2({logoSrc,contactTitle,id,text}){
     return (
         <div className="contactCardDiv">
             <img width={70} src={logoSrc}/>
-            <h3 style={{
+            <h3 className="conHead" style={{
                 fontFamily: "'acorn', sans-serif",
                 fontSize: "clamp(2rem, 8vw, 2.2rem)",
                 margin: "0 0 0 0"

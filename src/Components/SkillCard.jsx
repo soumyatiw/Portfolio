@@ -1,10 +1,10 @@
 export default function SkillCard({title,path,wid,level}){
     return(
-    <div className="skillCard">
+    <div data-aos="zoom-in" className="skillCard">
         <img src={path} style={{
-            width: "100px",
-            height: "100px",
-            marginTop: "10px"
+            width: "70px",
+            height: "70px",
+            marginTop: "40px"
         }}/>
         <h2 style={{
             fontFamily: "'acorn', sans-serif",
@@ -24,7 +24,7 @@ export default function SkillCard({title,path,wid,level}){
                 width: `${wid}px`,
                 borderRadius: "10px",
                 transition: "width 0.5s ease-in-out",
-                background: "linear-gradient(90deg,rgb(96, 205, 171),rgb(0, 104, 64))"
+                background: "linear-gradient(90deg,rgb(96, 205, 171),#D094E5)"
             }} className="aniCard"></div>
         </div>
         <h3 style={{

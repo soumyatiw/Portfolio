@@ -2,6 +2,7 @@ import TitleCard from "./TitleCard.jsx"
 import Profiles from "./Profiles.jsx"
 import Skill from "./Skill.jsx"
 import Contact from "./Contact.jsx"
+import Star from "./Star.jsx"
 
 export default function About(){
     return (
