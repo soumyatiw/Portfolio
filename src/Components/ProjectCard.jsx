@@ -1,25 +1,16 @@
-export default function ProjectCard({ title, description, image, link, demoLink }) {
+export default function ProjectCard({ title, category, image, link, bgColor }) {
     return (
-        <div className="projectCardDiv" data-aos="fade-up">
-            <h1 className="projectTitle">{title}</h1>
-
-            <div className="projectImageWrapper">
-                <img src={image} alt={title} className="projectImage" />
+        <div
+            className="project-card"
+            style={{ backgroundColor: bgColor }}
+            onClick={() => window.open(link, '_blank')}
+        >
+            <div className="project-card-content">
+                <span className="project-category">{category}</span>
+                <h2 className="project-title">{title}</h2>
             </div>
-
-            <p className="projectDescription">{description}</p>
-
-            <div className="projectLinks">
-                {link && (
-                    <button className="projectButton" onClick={() => window.open(link, '_blank')}>
-                        View Code
-                    </button>
-                )}
-                {demoLink && (
-                    <button className="projectButton secondary" onClick={() => window.open(demoLink, '_blank')}>
-                        Live Demo
-                    </button>
-                )}
+            <div className="project-image-container">
+                <img src={image} alt={title} className="project-image" />
             </div>
         </div>
     );
