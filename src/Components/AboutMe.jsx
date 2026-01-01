@@ -19,16 +19,14 @@ export default function AboutMe() {
                 <div className="aboutMeText" data-aos="fade-left" data-aos-delay="400">
                     <h2 className="aboutMeTitle">About Me</h2>
                     <p className="aboutMeDescription">
-                        Hi! I'm <span className="highlight">Soumya Tiwari</span>, a passionate web developer
-                        who loves creating beautiful and functional digital experiences. With expertise in
-                        modern web technologies like <span className="highlight">React</span>,
-                        <span className="highlight"> JavaScript</span>, and <span className="highlight">CSS</span>,
-                        I transform ideas into elegant solutions.
+                        Hi! I'm <span className="highlight">Soumya Tiwari</span>, a Computer Science & Data Science undergraduate
+                        passionate about problem-solving and building practical web applications. I enjoy turning ideas into
+                        clean, efficient solutions through real-world projects while continuously sharpening my logical thinking.
                     </p>
+
                     <p className="aboutMeDescription">
-                        I believe in writing clean, maintainable code and creating user interfaces that not
-                        only look stunning but also provide exceptional user experiences. When I'm not coding,
-                        you'll find me exploring new technologies and contributing to open-source projects.
+                        Alongside web development, I’m gradually learning artificial intelligence, exploring how intelligent
+                        systems work and how they can be seamlessly integrated into modern, impactful products.
                     </p>
                     <div className="aboutMeStats">
                         <div className="statItem" data-aos="zoom-in" data-aos-delay="600">

@@ -11,11 +11,20 @@ import './App.css'
 
 function App() {
   const [page, setPage] = useState("about");
+
   useEffect(() => {
     AOS.init({
       duration: 1000
     });
   }, []);
+
+  // Scroll to top whenever page changes
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [page]);
   const renderPage = () => {
     switch (page) {
       case "about":
