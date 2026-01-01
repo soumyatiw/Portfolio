@@ -1,20 +1,20 @@
-export default function Contact(){
-    return(
+export default function Contact() {
+    return (
         <div data-aos="fade-up" className="contactDiv">
-            <ContactCard logoSrc="./src/Logos/linkedIn.png" contactTitle={"LinkedIn"} id={"Soumya Tiwari"} link={"https://www.linkedin.com/in/soumya-tiwari-766430323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} text={"Connect"}/>
+            <ContactCard logoSrc="./src/Logos/linkedIn.png" contactTitle={"LinkedIn"} id={"Soumya Tiwari"} link={"https://www.linkedin.com/in/soumya-tiwari-766430323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} text={"Connect"} />
 
-            <ContactCard logoSrc="./src/Logos/github.png" contactTitle={"GitHub"} id={"soumyatiw"} link={"https://github.com/soumyatiw"} text={"Connect"}/>
+            <ContactCard logoSrc="./src/Logos/github.png" contactTitle={"GitHub"} id={"soumyatiw"} link={"https://github.com/soumyatiw"} text={"Connect"} />
 
-            <ContactCard2 logoSrc="./src/Logos/gmail.png" contactTitle={"Email"} id={"soumyatiwari2005@gmail.com"} text={"Connect"}/>
+            <ContactCard2 logoSrc="./src/Logos/gmail.png" contactTitle={"Email"} id={"soumyatiwari2005@gmail.com"} text={"Connect"} />
 
         </div>
     )
 }
 
-function ContactCard({logoSrc,contactTitle,id,link,text}){
+function ContactCard({ logoSrc, contactTitle, id, link, text }) {
     return (
         <div className="contactCardDiv">
-            <img width={70} src={logoSrc}/>
+            <img width={70} src={logoSrc} />
             <h3 style={{
                 fontFamily: "'acorn', sans-serif",
                 fontSize: "clamp(2rem, 8vw, 2.2rem)",
@@ -34,10 +34,10 @@ function ContactCard({logoSrc,contactTitle,id,link,text}){
     )
 }
 
-function ContactCard2({logoSrc,contactTitle,id,text}){
+function ContactCard2({ logoSrc, contactTitle, id, text }) {
     return (
         <div className="contactCardDiv">
-            <img width={70} src={logoSrc}/>
+            <img width={70} src={logoSrc} />
             <h3 className="conHead" style={{
                 fontFamily: "'acorn', sans-serif",
                 fontSize: "clamp(2rem, 8vw, 2.2rem)",
@@ -50,9 +50,9 @@ function ContactCard2({logoSrc,contactTitle,id,text}){
                 marginBottom: "10px",
                 marginTop: "0px"
             }}>{id}</h4>
-            
-            <button onClick={()=>window.location.href = "mailto:soumyatiwari2005@gmail.com"} className="contactButton">{text}</button>
-           
+
+            <button onClick={() => window.location.href = "mailto:soumyatiwari2005@gmail.com"} className="contactButton">{text}</button>
+
         </div>
     )
 }

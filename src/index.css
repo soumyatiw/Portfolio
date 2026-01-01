@@ -1,6 +1,37 @@
-body{
+:root {
+  /* Color Palette */
+  --primary-dark: #154d34;
+  --primary-teal: #024949;
+  --accent-purple: #D094E5;
+  --accent-teal: #60cdab;
+  --accent-pink: #fecdcf;
+  --glass-white: rgba(255, 255, 255, 0.5);
+  --glass-white-light: rgba(255, 255, 255, 0.2);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 10px 25px rgba(112, 112, 112, 0.4);
+  --shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.2);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   overscroll-behavior: none;
-  min-height: 100%;
-  padding:0px;
-  margin:0px;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', system-ui, sans-serif;
 }

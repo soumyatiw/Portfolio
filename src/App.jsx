@@ -4,15 +4,16 @@ import 'aos/dist/aos.css';
 import Header from "./Components/Header.jsx"
 import About from "./Components/About.jsx";
 import Project from "./Components/Project.jsx";
+import InteractiveBackground from "./Components/InteractiveBackground.jsx";
 import './App.css'
 
 
 
 function App() {
-  const [page, setPage] = useState("about"); 
+  const [page, setPage] = useState("about");
   useEffect(() => {
     AOS.init({
-      duration: 1000     
+      duration: 1000
     });
   }, []);
   const renderPage = () => {
@@ -23,10 +24,12 @@ function App() {
         return <Project />;
       default:
         return <About />;
-    }}
+    }
+  }
 
   return (
     <div className='mainContainer'>
+      <InteractiveBackground />
       <Header pageChange={setPage} page={page} />
       <div>{renderPage()}</div>
     </div>
