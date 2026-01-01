@@ -1,11 +1,15 @@
+import linkedInLogo from "../Logos/linkedIn.png"
+import githubLogo from "../Logos/github.png"
+import gmailLogo from "../Logos/gmail.png"
+
 export default function Contact() {
     return (
         <div data-aos="fade-up" className="contactDiv">
-            <ContactCard logoSrc="./src/Logos/linkedIn.png" contactTitle={"LinkedIn"} id={"Soumya Tiwari"} link={"https://www.linkedin.com/in/soumya-tiwari-766430323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} text={"Connect"} />
+            <ContactCard logoSrc={linkedInLogo} contactTitle={"LinkedIn"} id={"Soumya Tiwari"} link={"https://www.linkedin.com/in/soumya-tiwari-766430323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} text={"Connect"} />
 
-            <ContactCard logoSrc="./src/Logos/github.png" contactTitle={"GitHub"} id={"soumyatiw"} link={"https://github.com/soumyatiw"} text={"Connect"} />
+            <ContactCard logoSrc={githubLogo} contactTitle={"GitHub"} id={"soumyatiw"} link={"https://github.com/soumyatiw"} text={"Connect"} />
 
-            <ContactCard2 logoSrc="./src/Logos/gmail.png" contactTitle={"Email"} id={"soumyatiwari2005@gmail.com"} text={"Connect"} />
+            <ContactCard2 logoSrc={gmailLogo} contactTitle={"Email"} id={"soumyatiwari2005@gmail.com"} text={"Connect"} />
 
         </div>
     )

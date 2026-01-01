@@ -1,48 +1,54 @@
 import TitleCard from "./TitleCard";
 import ProjectCard from "./ProjectCard";
 import Star from "./Star";
+import rentleeImg from "../Logos/rentlee.png"
+import medsiImg from "../Logos/medsi.png"
+import querlyImg from "../Logos/querly.png"
+import portfolioImg from "../Logos/portfolio.png"
+import metubeImg from "../Logos/MeTube.jpeg"
+import capstoneImg from "../Logos/Capstone.jpeg"
 
 export default function Project() {
     const projects = [
         {
             title: "Rentlee",
             category: "RENTAL PLATFORM",
-            image: "./src/Logos/rentlee.png",
+            image: rentleeImg,
             link: "https://rentlee-soumya.vercel.app/",
             bgColor: "#E5C9F5" // Lavender
         },
         {
             title: "Medsi",
             category: "HEALTHCARE",
-            image: "./src/Logos/medsi.png",
+            image: medsiImg,
             link: "https://medsi-soumya.vercel.app/",
             bgColor: "#A8E6CF" // Mint green
         },
         {
             title: "Querly",
             category: "AI EMAIL MANAGER",
-            image: "./src/Logos/querly.png",
+            image: querlyImg,
             link: "https://github.com/soumyatiw/Querly",
             bgColor: "#B8D8F0" // Light blue
         },
         {
             title: "Portfolio",
             category: "PERSONAL",
-            image: "./src/Logos/portfolio.png",
+            image: portfolioImg,
             link: "https://github.com/soumyatiw/Portfolio",
             bgColor: "#FFD4B8" // Peach
         },
         {
             title: "MeTube",
             category: "VIDEO PLATFORM",
-            image: "./src/Logos/MeTube.jpeg",
+            image: metubeImg,
             link: "https://soumyatiw.github.io/MEtube/",
             bgColor: "#b1ede9ff" // Soft coral
         },
         {
             title: "Capstone",
             category: "ACADEMIC",
-            image: "./src/Logos/Capstone.jpeg",
+            image: capstoneImg,
             link: "https://soumyatiw.github.io/Capstone/",
             bgColor: "#E8D5F2" // Soft lilac
         }
