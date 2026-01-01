@@ -21,7 +21,7 @@ export default function Project() {
         {
             title: "Querly",
             category: "AI EMAIL MANAGER",
-            image: "./src/Logos/MeTube.jpeg",
+            image: "./src/Logos/querly.png",
             link: "https://github.com/soumyatiw/Querly",
             bgColor: "#B8D8F0" // Light blue
         },
