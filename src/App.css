@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(-45deg,#fad0c4, #b8f7e6,#f2f7a4, #fecdcf,#b8f7e6, #f8b8e6);
+  background: linear-gradient(-45deg,#fad0c4, #b8f7e6,#faefa7, #fecdcf,#b8f7e6, #f8b8e6);
   background-size: 400% 400%;
   animation: moveGradient 10s ease infinite;
   font-family: sans-serif;
@@ -136,13 +136,13 @@
 
 .titCardDiv:hover{
   box-shadow: 0 10px 25px rgba(112, 112, 112, 0.4); 
-  background: linear-gradient(120deg, hsla(166, 54%, 45%, 0.9), hsla(172, 95%, 18%, 0.9),hsla(172, 95%, 18%, 0.9));
+  background: linear-gradient(120deg, #035a5a, #024949, #024949);
 }
 
 .titCardDiv{
   width:30vw;
   height: 125px;
-  background-color: hsla(172, 95%, 18%, 0.9);
+  background-color: #024949;
   align-self: flex-start;
   margin: 50px 0 50px 0;
   border-top-right-radius: 60px;
@@ -186,6 +186,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  opacity: 0.90;
 }
 
 .skillCardCompact::before {
@@ -310,7 +311,7 @@
   max-width: 1200px;
   margin: 80px auto;
   padding: 40px;
-  background: var(--glass-white);
+  background: rgba(245, 245, 240, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 40px;
@@ -330,46 +331,24 @@
 .aboutMeImageWrapper {
   position: relative;
   flex: 0 0 300px;
-  height: 300px;
+  height: 400px;
 }
 
-.imageGlow {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background: linear-gradient(135deg, var(--accent-teal), var(--accent-purple));
-  border-radius: 50%;
-  filter: blur(20px);
-  opacity: 0.6;
-  animation: pulse 3s ease-in-out infinite;
-}
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 0.6;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
 
 .aboutMeImage {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
   object-fit: cover;
-  border: 5px solid white;
   box-shadow: var(--shadow-md);
   transition: transform var(--transition-normal);
 }
 
 .aboutMeImage:hover {
-  transform: scale(1.05) rotate(2deg);
+  transform: scale(1.05);
 }
 
 .aboutMeText {
@@ -404,19 +383,21 @@
 }
 
 .aboutMeStats {
+  width: 100%;
   display: flex;
   gap: 30px;
+  align-items: flex-end;
   margin-top: 40px;
   flex-wrap: wrap;
 }
 
 .statItem {
   flex: 1;
-  min-width: 100px;
+  width: 50px;
   text-align: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
+  background: #024949;
+  border-radius: 60px;
   backdrop-filter: blur(5px);
   transition: all var(--transition-normal);
 }
@@ -424,13 +405,13 @@
 .statItem:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
-  background: rgba(255, 255, 255, 0.8);
+  background: #035a5a;
 }
 
 .statNumber {
   font-family: 'acorn', sans-serif;
   font-size: clamp(2rem, 4vw, 2.5rem);
-  color: var(--primary-teal);
+  color: white;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -438,7 +419,7 @@
 .statLabel {
   font-family: 'Ubuntu', sans-serif;
   font-size: clamp(0.9rem, 2vw, 1rem);
-  color: #5a7a6d;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
 }

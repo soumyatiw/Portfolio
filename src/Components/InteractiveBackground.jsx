@@ -51,8 +51,8 @@ const InteractiveBackground = () => {
                 this.distance = 0;
                 this.opacity = Math.random() * 0.5 + 0.2;
                 // Add slow drift movement
-                this.vx = (Math.random() - 0.5) * 1.2;
-                this.vy = (Math.random() - 0.5) * 1.2;
+                this.vx = (Math.random() - 0.5) * 1;
+                this.vy = (Math.random() - 0.5) * 1;
                 this.driftRange = 100; // How far particles can drift from base position
             }
 
@@ -96,7 +96,7 @@ const InteractiveBackground = () => {
             }
 
             draw(ctx) {
-                ctx.fillStyle = `rgba(21, 77, 52, ${this.opacity})`;
+                ctx.fillStyle = `rgba(38, 112, 79, ${this.opacity})`;
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.closePath();
@@ -134,7 +134,7 @@ const InteractiveBackground = () => {
 
                     if (distance < 100) {
                         const opacity = (1 - distance / 100) * 0.3;
-                        ctx.strokeStyle = `rgba(21, 77, 52, ${opacity})`;
+                        ctx.strokeStyle = `rgba(38, 112, 79, ${opacity})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesRef.current[a].x, particlesRef.current[a].y);

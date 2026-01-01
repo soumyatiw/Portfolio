@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  /* background-color: rgb(38, 112, 79); */
   height: 100%;
   pointer-events: none;
   z-index: 0;
