@@ -30,6 +30,7 @@
   animation: moveGradient 10s ease infinite;
   font-family: sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 @keyframes moveGradient {
@@ -550,33 +551,52 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .platDiv {
+    width: 90%;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .titleDiv {
+    width: 320px;
+    height: 380px;
+  }
+}
+
 @media (max-width: 768px) {
   .headerSection {
     width: 90%;
     max-width: 350px;
     height: 55px;
     font-size: 16px;
+    margin-top: 20px;
   }
   
   .navButton {
     width: 90px;
     height: 35px;
+    font-size: 15px;
   }
   
   .heroText {
     font-size: clamp(2.5rem, 12vw, 5rem);
     text-align: center;
+    padding: 0 20px;
   }
   
   .headingTwo {
     width: 85vw;
     font-size: clamp(1rem, 5vw, 1.1rem);
+    margin-top: 30px;
+    padding: 0 10px;
   }
   
   .aboutMeSection {
     width: 95%;
     padding: 30px 20px;
     margin: 50px auto;
+    border-radius: 30px;
   }
   
   .aboutMeContent {
@@ -586,7 +606,8 @@
   
   .aboutMeImageWrapper {
     flex: 0 0 250px;
-    height: 250px;
+    height: 300px;
+    margin: 0 auto;
   }
   
   .aboutMeText {
@@ -596,16 +617,17 @@
   .aboutMeStats {
     gap: 15px;
     justify-content: center;
+    margin-top: 30px;
   }
   
   .statItem {
-    min-width: 80px;
+    min-width: 120px;
     padding: 15px;
   }
   
   .skillsGrid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 18px;
     width: 90%;
   }
   
@@ -621,7 +643,6 @@
   .skillTitle {
     font-size: 0.85rem;
   }
-
   
   .projectCardDiv {
     max-width: 100%;
@@ -638,60 +659,222 @@
     flex-direction: column;
     height: auto;
     padding: 40px 20px;
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .contactCardDiv {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
   }
   
   .titCardDiv {
-    width: 60vw;
+    width: 70vw;
+    max-width: 400px;
     height: 100px;
+    margin: 30px 0;
+  }
+  
+  .platDiv {
+    width: 95%;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .titleDiv {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    min-height: 380px;
+    padding: 20px;
+  }
+  
+  .profileBtn {
+    width: 200px;
+    height: 48px;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
   .headerSection {
     width: 95%;
+    max-width: 340px;
     height: 50px;
     font-size: 14px;
+    margin-top: 15px;
+    border-radius: 25px;
   }
   
   .navButton {
-    width: 80px;
-    font-size: 14px;
+    width: 75px;
+    height: 32px;
+    font-size: 13px;
+  }
+  
+  .heroText {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+    padding: 0 15px;
+  }
+  
+  .headingTwo {
+    width: 90vw;
+    font-size: clamp(0.9rem, 4.5vw, 1rem);
+    margin-top: 25px;
+  }
+  
+  .aboutMeSection {
+    width: 95%;
+    padding: 25px 15px;
+    margin: 40px auto;
+    border-radius: 25px;
   }
   
   .aboutMeImageWrapper {
     flex: 0 0 200px;
-    height: 200px;
+    height: 250px;
   }
   
   .aboutMeStats {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 25px;
   }
   
   .statItem {
     width: 100%;
+    min-width: auto;
+    padding: 15px 10px;
+    border-radius: 40px;
+  }
+  
+  .statNumber {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  
+  .statLabel {
+    font-size: clamp(0.7rem, 3vw, 0.85rem);
   }
   
   .skillsGrid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 12px;
     width: 95%;
   }
   
   .skillCardCompact {
-    padding: 12px;
+    padding: 10px;
+    border-radius: 15px;
   }
   
   .skillIconWrapper {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
   }
   
   .skillTitle {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
-
   
+  .contactDiv {
+    width: 95%;
+    padding: 30px 15px;
+    gap: 25px;
+    border-radius: 25px;
+  }
+  
+  .contactCardDiv {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+  
+  .contactButton {
+    width: 180px;
+    height: 45px;
+    font-size: 1rem;
+  }
+  
+  .titCardDiv {
+    width: 80vw;
+    max-width: 320px;
+    height: 90px;
+    margin: 25px 0;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  .platDiv {
+    width: 95%;
+    gap: 20px;
+  }
+  
+  .titleDiv {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    min-height: 360px;
+    padding: 15px;
+    border-radius: 40px;
+  }
+  
+  .profileBtn {
+    width: 180px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .headerSection {
+    width: 95%;
+    height: 48px;
+    font-size: 13px;
+    border-radius: 20px;
+  }
+  
+  .navButton {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+  }
+  
+  .heroText {
+    font-size: clamp(1.8rem, 9vw, 3rem);
+  }
+  
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+  
+  .skillCardCompact {
+    padding: 8px;
+  }
+  
+  .skillIconWrapper {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .skillTitle {
+    font-size: 0.7rem;
+  }
+  
+  .titCardDiv {
+    width: 85vw;
+    height: 85px;
+  }
+  
+  .titleDiv {
+    max-width: 300px;
+    min-height: 340px;
+  }
 }
 
 
